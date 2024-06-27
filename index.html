@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rechercher dans un fichier CSV</h1>
+        <input type="file" id="csvFileInput" accept=".csv">
+        <label for="csvFileInput" id="fileLabel">Import CSV</label>
+        <input type="text" id="searchInput" placeholder="Enter ID to search">
+        <button id="searchButton">Rechercher</button>
+        <div id="resultsContainer">
+            <div id="results"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.1/sql-wasm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/papaparse/5.3.0/papaparse.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
